@@ -1,5 +1,4 @@
-
-
+/* eslint-disable react-hooks/rules-of-hooks */
 
 const persona = {
     nombre: "tony",
@@ -9,19 +8,7 @@ const persona = {
 
 }
 
-//const {nombre, edad, clave } = persona
-
-
-//console.log(nombre);
-//console.log(edad);
-//console.log(clave);
-
-
 const useContext = ({clave, nombre, edad, rango= "capitan" }) => { 
-
-    
-    //console.log(nombre, edad, rango)
-
     return {
         nombreClave: clave,
         anios: edad,
@@ -33,9 +20,9 @@ const useContext = ({clave, nombre, edad, rango= "capitan" }) => {
     }
 }
 
-const { nombreClave, anios, latlng: { lat, lng} } = useContext(persona);
-console.log(nombreClave, anios,);
-console.log(lat, lng);
+const {nombreClave, anios } = useContext(persona);
+console.log(useContext);
+console.log(nombreClave, anios);
 
 
 

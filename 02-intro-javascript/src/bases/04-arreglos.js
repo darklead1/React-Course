@@ -10,7 +10,7 @@ let arreglo3 = arreglo2.map(function (numero) {
  
 })
 
-
+console.log(arreglo, 1)
 //console.log(arreglo);
 //console.log(arreglo2);
 console.log(arreglo3);
