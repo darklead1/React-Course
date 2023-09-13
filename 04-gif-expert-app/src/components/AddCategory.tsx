@@ -1,7 +1,11 @@
 import React, { ChangeEvent, FC, FormEvent, useState } from 'react'
 
+interface MyComponentProps {
+  onNewCategory: () => void; 
+}
 
-export const AddCategory: FC = () => {
+export const AddCategory: FC<MyComponentProps> = () => {
+
 
 const [inputValue, setInputValue] = useState<string>('');
 
